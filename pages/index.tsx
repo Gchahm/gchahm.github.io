@@ -19,28 +19,11 @@ const projects = [
     github: 'https://github.com/Gchahm/Kalendario',
   },
   {
-    title: 'Safe',
-    description: 'Secure file storage system',
-    image: '/img/portfolio/safe.png',
-    tags: ['React', 'AWS', 'Node.js'],
-  },
-  {
-    title: 'Game',
-    description: 'Interactive gaming platform',
-    image: '/img/portfolio/game.png',
-    tags: ['Unity', 'C#', 'WebGL'],
-  },
-  {
-    title: 'Cake',
-    description: 'E-commerce platform for baked goods',
-    image: '/img/portfolio/cake.png',
-    tags: ['React', 'Stripe', 'Node.js'],
-  },
-  {
-    title: 'Circus',
-    description: 'Event management system',
-    image: '/img/portfolio/circus.png',
-    tags: ['React', 'GraphQL', 'PostgreSQL'],
+    title: 'SQLReminders',
+    description: 'A C# reminder application with SQL Server integration, featuring a microservices architecture and automated testing.',
+    image: '/img/portfolio/sqlreminders.png',
+    tags: ['C#', '.NET', 'SQL Server', 'Microservices', 'Testing'],
+    github: 'https://github.com/Gchahm/SQLReminders',
   },
 ];
 
