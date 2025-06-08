@@ -25,6 +25,13 @@ const projects = [
     tags: ['C#', '.NET', 'SQL Server', 'Microservices', 'Testing'],
     github: 'https://github.com/Gchahm/SQLReminders',
   },
+  {
+    title: 'Trello Automation',
+    description: 'A Python-based automation system for travel agencies to monitor flight schedules, featuring Trello integration, automated notifications, and comprehensive logging.',
+    image: '/img/portfolio/trello_automation.png',
+    tags: ['Python', 'Trello API', 'Selenium', 'Automation', 'REST API'],
+    github: 'https://github.com/Gchahm/trello_automation',
+  },
 ];
 
 export default function Home() {
