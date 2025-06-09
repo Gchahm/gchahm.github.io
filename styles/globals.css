@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+
+    html,
+    body {
+        @apply h-full w-full m-0 p-0 overflow-x-hidden;
+    }
+
     html {
         scroll-behavior: smooth;
     }
 
     body {
         @apply antialiased;
+    }
+
+    #__next {
+        @apply h-full w-full;
     }
 }
 
