@@ -23,7 +23,7 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
 
       <FontAwesomeIcon
         icon={faBullseye}
-        className="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 z-10 text-yellow-700"
+        className="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 z-10 text-primary-900 dark:text-primary-400"
       />
 
       {/* Date */}
