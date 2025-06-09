@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { TimelineItem } from './timeline/TimelineItem';
-import { timelineItems } from '../data/timelineItems';
+import { TimelineItem } from './TimelineItem';
+import { professionalProjects } from '../data/professionalProjects';
 
 export default function ProfessionalExperience() {
   let projectIndex = 0;
@@ -26,7 +26,7 @@ export default function ProfessionalExperience() {
 
           {/* Timeline items */}
           <div className="relative">
-            {timelineItems.map((item) => {
+            {professionalProjects.map((item) => {
               const index = item.type === 'project' ? projectIndex++ : 0;
               return (
                 <TimelineItem 

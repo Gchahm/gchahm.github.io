@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrosoft } from '@fortawesome/free-brands-svg-icons';
-import { faUpRightFromSquare, faBuilding } from '@fortawesome/free-solid-svg-icons';
-import type { Project } from '../../types/timeline';
-import { formatDate } from '../../utils/date';
+import { faUpRightFromSquare, faBuilding, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import type { Project } from '../types/timeline';
+import { formatDate } from '../utils/date';
 
 interface ProjectTimelineItemProps {
   item: Project;
@@ -22,8 +22,8 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
       <div className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
 
       <FontAwesomeIcon
-        icon="bullseye"
-        className="w-8 h-8 text-gray-600 absolute left-1/2 transform -translate-x-1/2 z-10 text-green-700"
+        icon={faBullseye}
+        className="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 z-10 text-yellow-700"
       />
 
       {/* Date */}

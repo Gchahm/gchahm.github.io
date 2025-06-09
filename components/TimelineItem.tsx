@@ -1,4 +1,4 @@
-import type { TimelineItem as TimelineItemType } from '../../types/timeline';
+import type { TimelineItem as TimelineItemType } from '../types/timeline';
 import { ProjectTimelineItem } from './ProjectTimelineItem';
 import { EventTimelineItem } from './EventTimelineItem';
 

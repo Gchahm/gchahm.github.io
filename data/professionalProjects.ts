@@ -1,7 +1,7 @@
 import { TimelineItem } from '../types/timeline';
 import { faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 
-export const timelineItems: TimelineItem[] = [
+export const professionalProjects: TimelineItem[] = [
     {
     type: 'project',
     title: 'Word eSignature Integration',
