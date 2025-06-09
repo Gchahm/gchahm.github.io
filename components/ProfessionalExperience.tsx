@@ -26,11 +26,11 @@ export default function ProfessionalExperience() {
 
           {/* Timeline items */}
           <div className="relative">
-            {professionalProjects.map((item) => {
+            {professionalProjects.map((item, key) => {
               const index = item.type === 'project' ? projectIndex++ : 0;
               return (
                 <TimelineItem 
-                  key={item.type === 'project' ? item.title : item.title + item.date} 
+                  key={key} 
                   item={item} 
                   index={index} 
                 />
