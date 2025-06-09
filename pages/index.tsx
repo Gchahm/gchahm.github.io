@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 
 const professionalWork = [
@@ -109,9 +111,9 @@ export default function Home() {
                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
               >
                 {darkMode ? (
-                  <SunIcon className="h-5 w-5" />
+                  <FontAwesomeIcon icon={faSun} className="h-5 w-5" />
                 ) : (
-                  <MoonIcon className="h-5 w-5" />
+                  <FontAwesomeIcon icon={faMoon} className="h-5 w-5" />
                 )}
               </button>
             </div>
@@ -174,9 +176,7 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                      </svg>
+                      <FontAwesomeIcon icon={faMicrosoft} className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                       <span className="text-gray-600 dark:text-gray-400 font-medium">{project.company}</span>
                       <span className="text-gray-400 dark:text-gray-500">•</span>
                       <span className="text-gray-600 dark:text-gray-400">{project.role}</span>
@@ -207,9 +207,7 @@ export default function Home() {
                         className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
                         aria-label={`View ${project.title} documentation`}
                       >
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
+                        <FontAwesomeIcon icon={faMicrosoft} className="w-5 h-5" />
                         View Documentation
                       </a>
                     )}
@@ -279,9 +277,7 @@ export default function Home() {
                         className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 transition-colors"
                         aria-label={`View ${project.title} on GitHub`}
                       >
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.68.8.56C20.71 21.44 24 17.12 24 12.02 24 5.74 18.27.5 12 .5z"/>
-                        </svg>
+                        <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
                         GitHub
                       </a>
                     )}
