@@ -6,11 +6,31 @@ import Image from 'next/image';
 
 const professionalWork = [
   {
+    title: 'Word eSignature Integration',
+    description: 'Developed a key feature enabling electronic signatures directly within Microsoft Word documents. Implemented support for creating signature requests from Word documents, prepositioned signature fields, and seamless PDF conversion for the signing process.',
+    image: '/img/portfolio/word_esignature.png',
+    tags: ['Microsoft Word', 'SharePoint', 'Enterprise Integration', 'Workflow Automation', 'UI/UX'],
+    blogPost: 'https://learn.microsoft.com/en-us/microsoft-365/syntex/esignature-create-request-word',
+    company: 'Microsoft',
+    role: 'Software Engineer',
+    duration: '2023-2024'
+  },
+  {
     title: 'SharePoint eSignature Integration',
     description: 'Developed a key feature for Microsoft SharePoint enabling seamless electronic signatures directly within document libraries. Implemented support for multiple signature providers, sequential signing workflows, and integration with Microsoft Teams Approvals.',
     image: '/img/portfolio/sharepoint_esignature.png',
     tags: ['SharePoint', 'Microsoft Teams', 'Enterprise Integration', 'Workflow Automation', 'UI/UX'],
     blogPost: 'https://learn.microsoft.com/en-us/microsoft-365/syntex/esignature-send-requests',
+    company: 'Microsoft',
+    role: 'Software Engineer',
+    duration: '2023-2024'
+  },
+  {
+    title: 'Microsoft Teams Approvals',
+    description: 'Developed a native Teams application enabling users to create, manage, and share approvals directly within Microsoft Teams. Implemented seamless integration with Power Automate infrastructure, allowing users to initiate approval flows from chats, channel conversations, or the approvals app itself.',
+    image: '/img/portfolio/teams_approvals.png',
+    tags: ['Microsoft Teams', 'Power Automate', 'Enterprise Integration', 'Workflow Automation', 'UI/UX'],
+    blogPost: 'https://learn.microsoft.com/en-us/power-automate/teams/native-approvals-in-teams',
     company: 'Microsoft',
     role: 'Software Engineer',
     duration: '2023-2024'
