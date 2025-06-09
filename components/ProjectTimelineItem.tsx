@@ -58,7 +58,7 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
                 <span className="text-gray-600 dark:text-gray-400">{item.title}</span>
               )}
             </div>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <p className="hidden md:block text-gray-600 dark:text-gray-300 mb-4">
               {item.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
