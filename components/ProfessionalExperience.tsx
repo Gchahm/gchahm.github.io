@@ -33,7 +33,7 @@ const professionalWork = [
     blogPost: 'https://learn.microsoft.com/en-us/power-automate/teams/native-approvals-in-teams',
     company: 'Microsoft',
     role: 'Software Engineer',
-    startDate: '2023-07',
+    startDate: '2021-05',
     endDate: '2023-09',
     color: 'bg-purple-500'
   }
@@ -87,7 +87,7 @@ export default function ProfessionalExperience() {
                   </div>
 
                   {/* Project details */}
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
+                  <div className={`w-1/2 py-36 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
                     <div>
                       <div className="flex items-center gap-2 mb-3">
                         <FontAwesomeIcon icon={faMicrosoft} className="w-5 h-5 text-gray-600 dark:text-gray-400" />
