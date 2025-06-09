@@ -3,6 +3,8 @@ import { TimelineItem } from './timeline/TimelineItem';
 import { timelineItems } from '../data/timelineItems';
 
 export default function ProfessionalExperience() {
+  let projectIndex = 0;
+
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,9 +26,16 @@ export default function ProfessionalExperience() {
 
           {/* Timeline items */}
           <div className="relative">
-            {timelineItems.map((item, index) => (
-              <TimelineItem key={item.type === 'project' ? item.title : item.title + item.date} item={item} index={index} />
-            ))}
+            {timelineItems.map((item) => {
+              const index = item.type === 'project' ? projectIndex++ : 0;
+              return (
+                <TimelineItem 
+                  key={item.type === 'project' ? item.title : item.title + item.date} 
+                  item={item} 
+                  index={index} 
+                />
+              );
+            })}
           </div>
         </div>
       </div>

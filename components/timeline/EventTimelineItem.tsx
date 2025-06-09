@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import type { TimelineEvent } from '../../types/timeline';
 import { formatDate } from '../../utils/date';
 
@@ -16,19 +15,18 @@ export const EventTimelineItem = ({ item, index }: EventTimelineItemProps) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="absolute w-full"
+      className="relative my-6"
     >
       {/* Timeline dot */}
-
-              <FontAwesomeIcon
-                icon={item.icon === 'star' ? faStar : faBriefcase} 
-                className="w-8 h-8 text-gray-600 dark:text-gray-400 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" 
-              />
-
+      <FontAwesomeIcon
+        icon={item.icon} 
+        className={`w-8 h-8 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 ${
+          item.icon === 'star' ? 'text-yellow-400' : 'text-amber-700'
+        }`}
+      />
 
       {/* Content */}
-      <div className="flex items-center justify-center transform -translate-y-1/2" 
-      >
+      <div className="flex items-center justify-center transform -translate-y-1/2">
         {/* Date */}
         <div className={`w-1/2 pr-12 text-right`}>
           <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">

@@ -1,3 +1,5 @@
+import { IconName, IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
 export type TimelineEvent = {
   type: 'event';
   title: string;
@@ -13,6 +15,7 @@ export type Project = {
   tags: string[];
   blogPost?: string;
   company: string;
+  companyIcon?: IconDefinition;
   role: string;
   startDate: string;
   endDate: string;

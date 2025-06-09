@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrosoft } from '@fortawesome/free-brands-svg-icons';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faUpRightFromSquare, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import type { Project } from '../../types/timeline';
 import { formatDate } from '../../utils/date';
 
@@ -19,23 +19,33 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="relative"
     >
-      {/* Timeline bar */}
-      <div className={`absolute left-1/2 transform -translate-x-1/2 w-1 h-full ${item.color} shadow-lg`}></div>
+
 
       {/* Content */}
       <div className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-        {/* Date */}
+        
+      {/* Timeline dot */}
+      <FontAwesomeIcon
+        icon="circle"
+        className="w-8 h-8 text-gray-600 dark:text-gray-400 absolute left-1/2 transform -translate-x-1/2 z-10"
+      />
+      
+      {/* Date */}
         <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}>
           <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">
             {`${formatDate(item.startDate)} - ${formatDate(item.endDate)}`}
           </div>
         </div>
 
+
         {/* Project details */}
         <div className={`w-1/2 py-36 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <FontAwesomeIcon icon={faMicrosoft} className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+              <FontAwesomeIcon 
+                icon={item.companyIcon || faBuilding} 
+                className="w-5 h-5 text-gray-600 dark:text-gray-400" 
+              />
               <span className="text-gray-600 dark:text-gray-400 font-medium">{item.company}</span>
               <span className="text-gray-400 dark:text-gray-500">•</span>
               {item.blogPost ? (
