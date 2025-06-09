@@ -8,6 +8,11 @@ export type TimelineEvent = {
   color: string;
 };
 
+export type Spacer = {
+  type: 'spacer';
+  height: string; // CSS height value (e.g. '4rem', '100px')
+};
+
 export type Project = {
   type: 'project';
   title: string;
@@ -22,4 +27,4 @@ export type Project = {
   color: string;
 };
 
-export type TimelineItem = Project | TimelineEvent; 
+export type TimelineItem = Project | TimelineEvent | Spacer; 

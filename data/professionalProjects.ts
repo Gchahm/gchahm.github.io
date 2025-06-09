@@ -51,7 +51,7 @@ export const professionalProjects: TimelineItem[] = [
   },
   {
     type: 'event',
-    title: 'Started at Microsoft',
+    title: 'Started at Microsoft - Software Engineer',
     date: '2021-05',
     icon: 'briefcase',
     color: 'bg-purple-500'
@@ -70,7 +70,7 @@ export const professionalProjects: TimelineItem[] = [
   },
   {
     type: 'event',
-    title: 'Started at Ocuco',
+    title: 'Started at Ocuco - Software Engineer',
     date: '2021-03',
     icon: 'briefcase',
     color: 'bg-purple-500'
@@ -94,8 +94,12 @@ export const professionalProjects: TimelineItem[] = [
     color: 'bg-purple-500'
   },
   {
+    type: 'spacer',
+    height: '8rem'
+  },
+  {
     type: 'event',
-    title: 'Started at Advance Systems',
+    title: 'Started at Advance Systems - Support Analyst',
     date: '2016-02',
     icon: 'briefcase',
     color: 'bg-purple-500'

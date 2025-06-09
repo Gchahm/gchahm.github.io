@@ -32,7 +32,7 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Head>
         <title>Gustavo Francelino - Portfolio</title>
-        <meta name="description" content="Multilingual IT Professional holding a Hons Bachelor Degree in Telecommunications Engineering and Software Development MicroMasters Program paired with experience spanning over 4 years." />
+        <meta name="description" content="Dynamic and multilingual Software Engineer with over 7 years of experience in software development, project leadership, and AI integrations. Holds an Honours Bachelor’s Degree in Telecommunications Engineering and a Software Development MicroMasters from UBCx. Seeking to leverage technical and leadership insight for the next professional challenge." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -71,7 +71,7 @@ export default function Home() {
                 Gustavo Francelino
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Telecommunications Engineer & Software Developer
+                Senior Software Engineer
               </p>
             </motion.div>
           </div>

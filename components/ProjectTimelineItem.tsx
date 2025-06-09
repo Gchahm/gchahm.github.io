@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import { faUpRightFromSquare, faBuilding, faBullseye } from '@fortawesome/free-solid-svg-icons';
 import type { Project } from '../types/timeline';
 import { formatDate } from '../utils/date';

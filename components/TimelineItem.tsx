@@ -1,6 +1,7 @@
 import type { TimelineItem as TimelineItemType } from '../types/timeline';
 import { ProjectTimelineItem } from './ProjectTimelineItem';
 import { EventTimelineItem } from './EventTimelineItem';
+import { SpacerTimelineItem } from './SpacerTimelineItem';
 
 interface TimelineItemProps {
   item: TimelineItemType;
@@ -8,9 +9,12 @@ interface TimelineItemProps {
 }
 
 export const TimelineItem = ({ item, index }: TimelineItemProps) => {
-  return item.type === 'project' ? (
-    <ProjectTimelineItem item={item} index={index} />
-  ) : (
-    <EventTimelineItem item={item} index={index} />
-  );
+  switch (item.type) {
+    case 'project':
+      return <ProjectTimelineItem item={item} index={index} />;
+    case 'event':
+      return <EventTimelineItem item={item} index={index} />;
+    case 'spacer':
+      return <SpacerTimelineItem item={item} index={index} />;
+  }
 }; 
