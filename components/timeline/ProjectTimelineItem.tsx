@@ -19,17 +19,13 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="relative"
     >
-
-
-      {/* Content */}
       <div className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-        
-      {/* Timeline dot */}
+
       <FontAwesomeIcon
-        icon="circle"
-        className="w-8 h-8 text-gray-600 dark:text-gray-400 absolute left-1/2 transform -translate-x-1/2 z-10"
+        icon="bullseye"
+        className="w-8 h-8 text-gray-600 absolute left-1/2 transform -translate-x-1/2 z-10 text-green-700"
       />
-      
+
       {/* Date */}
         <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}>
           <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">
@@ -42,9 +38,9 @@ export const ProjectTimelineItem = ({ item, index }: ProjectTimelineItemProps) =
         <div className={`w-1/2 py-36 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <FontAwesomeIcon 
-                icon={item.companyIcon || faBuilding} 
-                className="w-5 h-5 text-gray-600 dark:text-gray-400" 
+              <FontAwesomeIcon
+                icon={item.companyIcon || faBuilding}
+                className="w-5 h-5 text-gray-600 dark:text-gray-400"
               />
               <span className="text-gray-600 dark:text-gray-400 font-medium">{item.company}</span>
               <span className="text-gray-400 dark:text-gray-500">•</span>

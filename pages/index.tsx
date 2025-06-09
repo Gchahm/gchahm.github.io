@@ -9,12 +9,6 @@ import ProfessionalExperience from '../components/ProfessionalExperience';
 
 const personalProjects = [
   {
-    title: 'Exsequor',
-    description: 'A task management application',
-    image: '/img/portfolio/Exsequor.png',
-    tags: ['React', 'Node.js', 'MongoDB'],
-  },
-  {
     title: 'Kalendario',
     description: 'A full-stack calendar and scheduling app with a Django REST API backend (JWT/OAuth), async tasks (Celery/Redis), PostgreSQL, Stripe billing, and Azure deployment.',
     image: '/img/portfolio/kalendario.png',
