@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 import ProfessionalExperience from '../components/ProfessionalExperience';
 import PersonalExperience from '../components/PersonalExperience';
 import ChatInterface from '../components/ChatInterface';
+import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -38,12 +38,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Head>
-        <title>Gustavo Francelino - Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="description" content="Dynamic and multilingual Software Engineer with over 7 years of experience in software development, project leadership, and AI integrations. Holds an Honours Bachelor’s Degree in Telecommunications Engineering and a Software Development MicroMasters from UBCx. Seeking to leverage technical and leadership insight for the next professional challenge." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEOHead />
 
       <nav className="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg z-50 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
