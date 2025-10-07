@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 import ProfessionalExperience from '../components/ProfessionalExperience';
 import PersonalExperience from '../components/PersonalExperience';
+import ChatInterface from '../components/ChatInterface';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -77,6 +78,8 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        <ChatInterface />
 
         <ProfessionalExperience />
 
